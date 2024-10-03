@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movies and Series</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Movies and Series</h1>
+		<nav>
+			<ul>
+				<li><a href="#search">Search</a></li>
+				<li><a href="#movies">Movies</a></li>
+				<li><a href="#series">Series</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="search">
+			<h2>Search</h2>
+			<form>
+				<input type="text" id="search-input" placeholder="Search for movies and series...">
+				<button type="submit">Search</button>
+			</form>
+			<ul id="search-results"></ul>
+		</section>
+		<section id="movies">
+			<h2>Movies</h2>
+			<ul id="movies-list"></ul>
+		</section>
+		<section id="series">
+			<h2>Series</h2>
+			<ul id="series-list"></ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Movies and Series</p>
+	</footer>
+	<script src="scripts.js"></script>
+</body>
+</html>
+/* styles.css */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section {
+	margin: 1em;
+	width: 30%;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+#search-results {
+	display: none;
+}
+
+#movies-list, #series-list {
+	display: none;
+}
+// scripts.js
+const searchInput = document.querySelector('#search-input');
+const searchResultsList = document.querySelector('#search-results');
+const moviesList = document.querySelector('#movies-list');
+const seriesList = document.querySelector('#
